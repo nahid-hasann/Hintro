@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-border: hsl(214.3 32% 91.4%);
+  --color-input: hsl(214.3 32% 91.4%);
+  --color-ring: hsl(222.2 84% 4.9%);
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(222.2 84% 4.9%);
+  --color-primary: hsl(222.2 47.4% 11.2%);
+  --color-primary-foreground: hsl(210 40% 98%);
+  --color-secondary: hsl(210 40% 96.1%);
+  --color-secondary-foreground: hsl(222.2 47.4% 11.2%);
+  --color-muted: hsl(210 40% 96.1%);
+  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+  --color-accent: hsl(210 40% 96.1%);
+  --color-accent-foreground: hsl(222.2 47.4% 11.2%);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+:root {
+  /* Desktop Defaults */
+  --welcome-size: 20px;
+  --welcome-width: 336px;
+  --welcome-height: 24px;
+  --sub-size: 12px;
+  --sub-width: 344px;
+  --sub-height: 14px;
+  --btn-width: 137px;
+  --btn-height: 38px;
+  --btn-font: 'Roboto', sans-serif;
+  --btn-text-size: 14px;
+  --btn-weight: 400;
+  --sidebar-text-size: 14px;
+  --sidebar-icon-size: 18px;
+  --title-size: 24px;
+  --title-top: 18px;
+  --title-left: 48px;
+  --recent-title-size: 16px;
+  --recent-title-width: 93px;
+  /* StatCard Defaults */
+  --card-width: 240px;
+  --card-height: 80px;
+  --card-radius: 10px;
+  --card-border: 1px;
+  --card-gap: 12px;
+  --stat-icon-bg-size: 50px;
+  --stat-icon-bg-radius: 10px;
+  --stat-icon-size: 32px;
+  --stat-icon-left: 8px;
+  --stat-label-size: 16px;
+  --stat-label-spacing: 0.3px;
+  --stat-value-size: 20px;
+  /* EmptyState Defaults */
+  --empty-box-width: 802px;
+  --empty-box-height: 188px;
+  --empty-box-radius: 16px;
+  --empty-box-border: 1px solid rgba(0, 0, 0, 0.1);
+  --empty-box-gap: 16px;
+  --empty-icon-bg-width: 34px;
+  --empty-icon-bg-height: 36px;
+  --empty-icon-radius: 8px;
+  --empty-icon-size-w: 14px;
+  --empty-icon-size-h: 16px;
+  --empty-title-size: 14px;
+  --empty-desc-size: 10px;
+  --empty-desc-width: 302px;
+  --empty-btn-width: 78px;
+  --empty-btn-height: 24px;
+  --empty-btn-text-size: 10px;
+  --empty-btn-weight: 400;
+  --empty-btn-spacing: 0.5px;
+  --text-mb: 8px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --welcome-size: 16px;
+    --welcome-width: 100%;
+    --welcome-height: auto;
+    --sub-size: 10px;
+    --sub-width: 100%;
+    --sub-height: auto;
+    --btn-width: 100px;
+    --btn-height: 32px;
+    --btn-font: 'Inter', sans-serif;
+    --btn-text-size: 10px;
+    --btn-weight: 500;
+    --sidebar-text-size: 11.46px;
+    --sidebar-icon-size: 14.73px;
+    --title-size: 16px;
+    --title-top: 0px;
+    --title-left: 0px;
+    --recent-title-size: 12px;
+    --recent-title-width: 70px;
+    /* StatCard Mobile */
+    --card-width: 100%;
+    --card-height: 54px;
+    --card-radius: 6.67px;
+    --card-border: 0.67px;
+    --card-gap: 8px;
+    --stat-icon-bg-size: 33.33px;
+    --stat-icon-bg-radius: 6.67px;
+    --stat-icon-size: 21.33px;
+    --stat-icon-left: 2px;
+    --stat-label-size: 8px;
+    --stat-label-spacing: 0.2px;
+    --stat-value-size: 13.33px;
+    /* EmptyState Mobile */
+    --empty-box-width: 100%;
+    --empty-box-height: auto;
+    --empty-box-radius: 0px;
+    --empty-box-border: none;
+    --empty-box-gap: 20px;
+    --empty-icon-bg-width: 28px;
+    --empty-icon-bg-height: 29px;
+    --empty-icon-radius: 4px;
+    --empty-icon-size-w: 8px;
+    --empty-icon-size-h: 9px;
+    --empty-title-size: 12px;
+    --empty-desc-size: 10px;
+    --empty-desc-width: 280px;
+    --empty-btn-width: 100px;
+    --empty-btn-height: 32px;
+    --empty-btn-text-size: 10px;
+    --empty-btn-weight: 500;
+    --empty-btn-spacing: 0.1px;
+    --text-mb: 4px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
