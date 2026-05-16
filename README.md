@@ -56,5 +56,5 @@ This project is a clean, responsive, and pixel-perfect dashboard built for the *
 - LocalStorage is cleared upon logout to simulate a clean session for the next persona selection.
 
 ---
-Made with ❤️ by [Your Name]
+Made with ❤️ by [MH Nahid](https://github.com/nahid-hasann)
 © 2025 Hintro Dashboard Assignment.
