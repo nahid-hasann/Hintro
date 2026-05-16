@@ -9,6 +9,7 @@ import HowItWorks from './components/HowItWorks';
 import LogoutModal from './components/LogoutModal';
 import FeedbackForm from './components/FeedbackForm';
 import FeedbackHistory from './components/FeedbackHistory';
+import StatusBar from './components/StatusBar';
 import { fetchDashboardSummary } from './services/api';
 
 const App = () => {
@@ -280,6 +281,7 @@ const App = () => {
       </div>
 
       <div className="flex-1 flex flex-col overflow-hidden w-full max-w-full">
+        <StatusBar />
         <Header
           profile={data?.profile}
           onMenuClick={() => setIsSidebarOpen(true)}
