@@ -12,35 +12,19 @@ const Header = ({ profile, onMenuClick, onProfileClick }) => {
         <Menu size={20} />
       </button>
 
-      {/* Dashboard Title - Centered on Mobile, Pixel-Perfect on Desktop */}
-      <div className="absolute inset-0 flex items-center justify-center md:static md:inset-auto md:flex">
-        <div 
-          className="md:flex md:items-center"
+      <div className="absolute inset-0 flex items-center justify-center md:static md:inset-auto md:flex pointer-events-none">
+        <h2 className="font-medium text-black" 
           style={{ 
-            position: 'relative',
-            top: 'var(--title-top)', 
-            left: 'var(--title-left)',
-            width: 'var(--title-width)',
-            height: 'var(--title-height)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
+            fontSize: 'var(--title-size)', 
+            lineHeight: '100%',
+            letterSpacing: '0.3px',
+            fontFamily: 'Inter',
+            fontWeight: 500,
+            textAlign: 'center'
           }}
         >
-          <h2 className="font-medium" 
-            style={{ 
-              fontSize: 'var(--title-size)', 
-              lineHeight: '100%',
-              letterSpacing: '0.3px',
-              fontFamily: 'Inter',
-              fontWeight: 500,
-              color: '#000000',
-              textAlign: 'center'
-            }}
-          >
-            Dashboard
-          </h2>
-        </div>
+          Dashboard
+        </h2>
       </div>
       
       {/* Desktop/Right Section */}
