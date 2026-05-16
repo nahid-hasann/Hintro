@@ -13,10 +13,10 @@ const LogoutModal = ({ isOpen, onClose, onLogout }) => {
       
       {/* Modal Card */}
       <div className="relative bg-white w-full max-w-md rounded-[32px] p-8 shadow-2xl animate-in fade-in zoom-in duration-200">
-        <h2 className="text-[12px] md:text-[20px] font-bold text-slate-900 mb-6">Leaving already?</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">Leaving already?</h2>
         
         <div className="border-t border-slate-100 pt-6 mb-10">
-          <p className="text-[#000000] text-[8px] md:text-[12px] leading-relaxed font-medium">
+          <p className="text-[#000000] text-sm md:text-base leading-relaxed font-medium">
             You can log back in anytime to continue your meetings with Hintro.
           </p>
         </div>
